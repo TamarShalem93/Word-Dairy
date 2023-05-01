@@ -1,0 +1,27 @@
+<form class="add-word simple-form" (ngSubmit)="onSaveWord()">
+  <input
+    type="text"
+    name="word"
+    [(ngModel)]="word.word"
+    id="word"
+    placeholder="The Word"
+  />
+  <select name="heardBy" [(ngModel)]="word.heardBy" id="hear-the-word" multiple>
+    <option value="Mom">Mom</option>
+    <option value="Dad">Dad</option>
+    <option value="Grandma">Grandma</option>
+    <option value="Grandpa">Grandpa</option>
+  </select>
+
+  <div class="date-picker">
+    <label for="createdAt">Select a date:</label>
+    <input
+      class="date-picker"
+      type="date"
+      name="createdAt"
+      [value]="word.createdAt | date : 'yyyy-MM-dd'"
+      (input)="(word.createdAt)"
+    />
+  </div>
+  <button class="btn-add-word">Save</button>
+</form>

@@ -1,0 +1,17 @@
+.dashboard{
+  .total-words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 8px 0px rgba(55, 151, 105, 0.5);
+    font-size: 1.5em;
+    .number{
+      font-size: 2em;
+    }
+  }
+}

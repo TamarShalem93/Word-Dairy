@@ -1,0 +1,6 @@
+<app-word-filter></app-word-filter>
+<app-word-list
+  (remove)="onRemoveWord($event)"
+  [words]="words$ | async"
+></app-word-list>
+<router-outlet></router-outlet>

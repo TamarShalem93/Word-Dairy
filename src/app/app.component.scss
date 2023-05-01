@@ -1,0 +1,45 @@
+header{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 60px;
+    cursor: pointer;
+    h1{
+      background: linear-gradient(to right, #fdc24e, #e688b7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
+    img{
+    width: 60px;
+    height: 60px;
+    }
+  }
+
+  nav>*{
+    padding: 8px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    color: #444;
+    &:not(:last-child){
+      margin-inline-end: 5px;
+    }
+    &.active{
+      color: white;
+      opacity: 1;
+      background: linear-gradient(to right, #fdc24e, #e688b7);
+    }
+    &:hover{
+      box-shadow: 2px 2px 8px 0px rgba(55, 151, 105, 0.5);
+    }
+  }
+}
+

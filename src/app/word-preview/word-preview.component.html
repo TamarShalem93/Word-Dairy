@@ -1,0 +1,31 @@
+<article class="word-card" routerLink="/words/{{ word._id }}">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="the-word">{{ word.word }}</h2>
+    </div>
+    <div class="card-back">
+      <section class="actions">
+        <button (click)="onRemoveWord($event)" class="remove-btn">X</button>
+        <a
+          (click)="onLinkClick($event)"
+          routerLink="edit/{{ word._id }}"
+          class="edit-btn"
+        >
+          Edit
+        </a>
+      </section>
+      <h2 class="the-word">{{ word.word }}</h2>
+      <ul class="heard-by-list clean-list">
+        <li
+          *ngFor="let heardBy of word.heardBy"
+          [ngStyle]="{ 'background-color': wordService.getColors(heardBy) }"
+        >
+          {{ heardBy }}
+        </li>
+      </ul>
+      <h3 class="time-heard">
+        {{ word.createdAt | date : "MMM d, y" }}
+      </h3>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,14 @@
+<form action="" class="words-filter">
+  <input
+    [(ngModel)]="wordFilter.term"
+    (ngModelChange)="onSetFilter($event)"
+    name="term"
+    placeholder="Search"
+  />
+  <!-- <input type="text" #search placeholder="Type a word" /> -->
+  <!-- multiselect of who hear the word -->
+  <!-- <select name="sort-by" id="sort-by">
+    <option value="word">A to Z</option>
+    <option value="date">Date</option>
+  </select> -->
+</form>

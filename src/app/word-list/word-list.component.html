@@ -1,0 +1,15 @@
+<section class="words-list">
+  <article class="add-word-card" routerLink="edit">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2 class="the-word">+ New Word</h2>
+      </div>
+    </div>
+  </article>
+
+  <app-word-preview
+    (remove)="remove.emit($event)"
+    *ngFor="let word of words"
+    [word]="word"
+  ></app-word-preview>
+</section>

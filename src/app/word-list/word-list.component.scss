@@ -1,0 +1,41 @@
+.words-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+
+  .add-word-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      height: 200px;
+      width: 200px;
+      border-radius: 5px;
+      perspective: 800px;
+      cursor: pointer;
+      transition: all .3 ease-in;
+      &:hover{
+        scale: 1.1;
+      }
+  
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease-out;
+  
+        .card-front {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 5px;
+          box-shadow: 2px 2px 8px 0px rgba(55, 151, 105, 0.5);
+          color: #293241;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+        }
+}}}

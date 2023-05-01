@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+// Setup
+@import "./scss//setup/functions";
+@import "./scss//setup/mixins";
+@import "./scss//setup/variables";
+
+// Basics
+@import "./scss/basics/animations";
+@import "./scss/basics/base";
+@import "./scss/basics/helpers";
+@import "./scss/basics/layout";
+@import "./scss/basics/modals";
+@import "./scss/basics/typography";
+
+
+

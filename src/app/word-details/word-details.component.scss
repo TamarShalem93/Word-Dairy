@@ -1,0 +1,90 @@
+.add-word {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  input[type='text'],
+  select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+
+    &:hover {
+      border-color: #999;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+
+  .date-picker {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    input[type='date'] {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      background-color: #fff;
+      width: 100%;
+
+      &:hover {
+        border-color: #999;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+  }
+
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    label {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    input[type='file'] {
+      margin-bottom: 10px;
+    }
+  }
+  
+ .btn-add-word {
+   background-color: #379769;
+   color: #fff;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+
+   &:hover {
+     background-color: #2f825a;
+   }
+  }
+}
